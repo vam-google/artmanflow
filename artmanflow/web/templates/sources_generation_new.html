@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Common Step 1: Generate Sources Settings</title>
+  <link rel= "stylesheet" type= "text/css" href= "../static/steps.css">
+</head>
+<body>
+<a href="/">&lt;&lt; Index</a>
+<h3>Common Step 1: Generate Sources</h3>
+<h3>Settings</h3>
+<form action="/sources-generation" method="post" id="form">
+  <ul>
+    <li>
+      <div><label>Docker Image<input type="text" name="docker_image" value="{{config['docker_image']}}" required="required"/></label></div>
+    </li>
+    <li>
+      <div><label><input type="checkbox" name="debug_mode" value="True"/>Debug Mode</label></div>
+    </li>
+    <li><label>Artman</label>
+      <ul>
+        <li>
+          <div><label>Repository<input type="url" name="artman_git_repo" value="{{config['artman_git_repo']}}" required="required"/></label></div>
+        </li>
+        <li>
+          <div><label>Branch<input type="text" name="artman_git_branch" value="{{config['artman_git_branch']}}" required="required"/></label></div>
+        </li>
+        <li>
+          <div><label>Commit<input type="text" name="artman_git_commit" value="{{config['artman_git_commit']}}" required="required"/></label></div>
+        </li>
+      </ul>
+    </li>
+    <li><label>Toolkit</label>
+      <ul>
+        <li>
+          <div><label>Repository<input type="url" name="toolkit_git_repo" value="{{config['toolkit_git_repo']}}" required="required"/></label></div>
+        </li>
+        <li>
+          <div><label>Branch<input type="text" name="toolkit_git_branch" value="{{config['toolkit_git_branch']}}" required="required"/></label></div>
+        </li>
+        <li>
+          <div><label>Commit<input type="text" name="toolkit_git_commit" value="{{config['toolkit_git_commit']}}" required="required"/></label></div>
+        </li>
+      </ul>
+    </li>
+    <li><label>Googleapis</label>
+      <ul>
+        <li>
+          <div><label>Repository<input type="url" name="googleapis_git_repo" value="{{config['googleapis_git_repo']}}" required="required"/></label></div>
+        </li>
+        <li>
+          <div><label>Branch<input type="text" name="googleapis_git_branch" value="{{config['googleapis_git_branch']}}" required="required"/></label></div>
+        </li>
+        <li>
+          <div><label>Commit<input type="text" name="googleapis_git_commit" value="{{config['googleapis_git_commit']}}"  required="required"/></label></div>
+        </li>
+      </ul>
+    </li>
+    <li><label>List of Artman Configs</label>
+      <ul>
+        <li>
+          <div><label><input type="checkbox" name="debug_mode" value="True" required="required"/>I have updated googleapis <span>api_defaults.yaml</span></label></div>
+        </li>
+        <li>
+          <div><label><input type="checkbox" name="debug_mode" value="True" required="required"/>I have updated googleapis <span>dependencies.yaml</span></label></div>
+        </li>
+        <li>
+          <label><textarea rows="10" name="artman_client_yaml_configs" spellcheck="false">{{config['artman_client_yaml_configs']}}</textarea></label>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <input type="submit" value="Generate Sources"/>
+    </li>
+  </ul>
+</form>
+</body>
+</html>

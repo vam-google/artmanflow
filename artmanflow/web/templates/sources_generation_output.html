@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Common Step 1: Generate Sources Output</title>
+  <link rel= "stylesheet" type= "text/css" href= "../static/steps.css">
+</head>
+<body>
+<a href="/">&lt;&lt; Index</a>
+<h3>Common Step 1: Generate Sources</h3>
+{% if download_link %}
+  <p><a href="{{download_link}}" >Download Artifacts</a></p>
+  <h3>Output (Completed):</h3>
+{% else %}
+  <p><a href="javascript:window.location.reload(true)">Refresh</a></p>
+  <h3>Output (Running):</h3>
+{% endif %}
+<p><b>Output is located on host machine at: </b>{{output_link}}</p>
+{% autoescape false %}
+  {% for item in rows %}{{item}}{% endfor %}
+{% endautoescape %}
+{% if download_link %}
+  <p><a href="{{download_link}}" >Download Artifacts</a></p>
+{% else %}
+  <p><a href="javascript:window.location.reload(true)">Refresh</a></p>
+{% endif %}
+</body>
+</html>

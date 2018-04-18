@@ -1,0 +1,66 @@
+form {
+  width: 520px
+}
+
+form > ul {
+  display: block;
+  /*width: 450px;*/
+  list-style-type: none;
+  font-size: 16px;
+  font-family: serif;
+  margin: 0;
+  padding-left: 20px;
+}
+
+ul > li > label {
+  display: block;
+  padding: 0 0 15px 0;
+  /*font-weight: bold;*/
+}
+
+ul ul {
+  list-style-type: none;
+}
+
+li div {
+  border: none;
+  padding: 0 0 5px 0;
+  margin: 0 0 0 0;
+  overflow: auto
+}
+
+li div label {
+  vertical-align: middle;
+}
+
+li div input {
+  float: right;
+  display: inline-block;
+  width: 300px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+input[type=checkbox] {
+  width: auto;
+}
+
+form > ul > li > input {
+  margin-top: 10px;
+}
+
+li textarea {
+  white-space: pre;
+  width: 100%;
+  padding: 0 0 0 0;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li label span {
+  font-family: monospace;
+  font-size: 14px;
+}

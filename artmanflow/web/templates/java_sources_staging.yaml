@@ -1,0 +1,12 @@
+execution_id: ''
+guest_root_path: /var/generation_root
+docker_image: googleapis/artman:latest
+generator_artifacts:
+  sources_zip: ''
+debug_mode: False
+staging:
+  git_repo: https://github.com/googleapis/api-client-staging.git
+  git_branch: ''
+  git_user_name: ''
+  git_security_token: ''
+  run_tests: false

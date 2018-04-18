@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Step 2: Stage Sources Settings</title>
+  <link rel= "stylesheet" type= "text/css" href= "../static/steps.css">
+</head>
+<body>
+<a href="/">&lt;&lt; Index</a>
+<h3>Java Step 2: Stage Sources</h3>
+<h3>Settings</h3>
+<form action="/java-sources-staging" method="post" id="form" enctype="multipart/form-data">
+  <ul>
+    <li>
+      <div><label>Docker Image<input type="text" name="docker_image" value="{{config['docker_image']}}" accept="application/zip" required="required"/></label></div>
+    </li>
+    <li>
+      <div><label><input type="checkbox" name="debug_mode" value="True">Debug Mode</label></div>
+    </li>
+    <li>
+      <div><label>Generated Sources Zip<input type="file" name="generator_artifacts_sources_zip" required="required"/></label></div>
+    </li>
+    <li><label>Staging</label>
+      <ul>
+        <li>
+          <div><label>Repository<input type="url" name="staging_git_repo" value="{{config['staging_git_repo']}}" required="required"></label></div>
+        </li>
+        <li>
+          <div><label>User Name<input type="text" name="staging_git_user_name" value="{{config['staging_git_user_name']}}" required="required"></label></div>
+        </li>
+        <li>
+          <div><label>Security Token<input type="password" name="staging_git_security_token" value="{{config['staging_git_security_token']}}" required="required"></label></div>
+        </li>
+        <li>
+          <div><label><input type="checkbox" name="staging_run_tests" checked="checked" value="True">Run Tests</label></div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <input type="submit" value="Stage Sources"/>
+    </li>
+  </ul>
+</form>
+
+</body>
+</html>
