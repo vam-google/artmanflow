@@ -16,11 +16,6 @@ googleapis:
   git_branch: master
   git_commit: HEAD
 artman_client_yaml_configs:
-#  - path: googleapis/google/artman_core.yaml
-#    target: java_proto
-#  - path: googleapis/google/cloud/language/artman_language_v1.yaml
-#    target: java_gapic
-
   - path: googleapis/google/artman_core.yaml
     target: java_grpc
   - path: googleapis/google/appengine/artman_appengine.yaml
@@ -36,6 +31,8 @@ artman_client_yaml_configs:
   - path: googleapis/google/cloud/dataproc/artman_dataproc_v1.yaml
     target: java_gapic
   - path: googleapis/google/cloud/dialogflow/artman_dialogflow_v2beta1_java.yaml
+    target: java_gapic
+  - path: googleapis/google/cloud/dialogflow/artman_dialogflow_v2.yaml
     target: java_gapic
   - path: googleapis/google/cloud/language/artman_language_v1.yaml
     target: java_gapic
