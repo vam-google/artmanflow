@@ -40,6 +40,11 @@ artman_client_yaml_configs:
     target: java_gapic
   - path: googleapis/google/cloud/oslogin/artman_oslogin_v1.yaml
     target: java_gapic
+  
+  # not to be released until May 7, 2018
+  - path: googleapis/google/cloud/redis/artman_redis_v1beta1.yaml
+    target: java_gapic
+  
   - path: googleapis/google/cloud/speech/artman_speech_v1.yaml
     target: java_gapic
   - path: googleapis/google/cloud/speech/artman_speech_v1beta1.yaml
