@@ -67,6 +67,8 @@ artman_client_yaml_configs:
     target: java_gapic
   - path: googleapis/google/cloud/vision/artman_vision_v1p2beta1.yaml
     target: java_gapic
+  - path: googleapis/google/cloud/websecurityscanner/artman_websecurityscanner_v1alpha.yaml
+    target: java_gapic
   - path: googleapis/google/container/artman_container.yaml
     target: java_gapic
   - path: googleapis/google/datastore/artman_datastore.yaml
