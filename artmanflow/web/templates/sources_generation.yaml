@@ -34,11 +34,15 @@ artman_client_yaml_configs:
     target: java_gapic
   - path: googleapis/google/cloud/dialogflow/artman_dialogflow_v2.yaml
     target: java_gapic
+  - path: googleapis/google/cloud/iot/artman_cloudiot.yaml
+    target: java_gapic
   - path: googleapis/google/cloud/language/artman_language_v1.yaml
     target: java_gapic
   - path: googleapis/google/cloud/language/artman_language_v1beta2.yaml
     target: java_gapic
   - path: googleapis/google/cloud/oslogin/artman_oslogin_v1.yaml
+    target: java_gapic
+  - path: googleapis/google/cloud/redis/artman_redis_v1beta1.yaml
     target: java_gapic
   - path: googleapis/google/cloud/speech/artman_speech_v1.yaml
     target: java_gapic
@@ -61,6 +65,8 @@ artman_client_yaml_configs:
   - path: googleapis/google/cloud/vision/artman_vision_v1p1beta1.yaml
     target: java_gapic
   - path: googleapis/google/cloud/vision/artman_vision_v1p2beta1.yaml
+    target: java_gapic
+  - path: googleapis/google/cloud/websecurityscanner/artman_websecurityscanner_v1alpha.yaml
     target: java_gapic
   - path: googleapis/google/container/artman_container.yaml
     target: java_gapic
