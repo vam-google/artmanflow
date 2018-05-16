@@ -1,7 +1,7 @@
 import subprocess
 
-staging_path = '/usr/local/google/home/vam/_/projects/github/vam-google/api-client-staging/generated/java'
-dest_path = '/usr/local/google/home/vam/_/projects/github/vam-google/google-cloud-java'
+staging_path = '/usr/local/google/home/vam/_/_/101/artifacts-gapic'
+dest_path = '/usr/local/google/home/vam/_/projects/github/vam-google/google-cloud-java/google-cloud-clients'
 
 mapping = {
     'gapic-google-cloud-bigquerydatatransfer-v1': 'google-cloud-bigquerydatatransfer',
@@ -14,7 +14,7 @@ mapping = {
     'gapic-google-cloud-dlp-v2': 'google-cloud-dlp',
     'gapic-google-cloud-error-reporting-v1beta1': 'google-cloud-errorreporting',
     'gapic-google-cloud-firestore-v1beta1': 'google-cloud-firestore',
-    'gapic-google-cloud-iot-v1': 'gapic-google-cloud-iot',
+    'gapic-google-cloud-iot-v1': 'google-google-cloud-iot',
     'gapic-google-cloud-language-v1': 'google-cloud-language',
     'gapic-google-cloud-language-v1beta2': 'google-cloud-language',
     'gapic-google-cloud-logging-v2': 'google-cloud-logging',
