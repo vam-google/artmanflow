@@ -16,12 +16,14 @@ googleapis:
   git_branch: master
   git_commit: HEAD
 artman_client_yaml_configs:
-  - path: googleapis/google/artman_core.yaml
-    target: java_grpc
-  - path: googleapis/google/appengine/artman_appengine.yaml
-    target: java_grpc
-  - path: googleapis/google/iam/artman_iam.yaml
-    target: java_grpc
+#  - path: googleapis/google/artman_core.yaml
+#    target: java_grpc
+#  - path: googleapis/google/appengine/artman_appengine.yaml
+#    target: java_grpc
+#  - path: googleapis/google/iam/artman_iam.yaml
+#    target: java_grpc
+#  - path: googleapis/google/longrunning/artman_longrunning.yaml
+#    target: java_gapic
   - path: googleapis/google/bigtable/admin/artman_bigtableadmin.yaml
     target: java_gapic
   - path: googleapis/google/bigtable/artman_bigtable.yaml
@@ -82,15 +84,9 @@ artman_client_yaml_configs:
     target: java_gapic
   - path: googleapis/google/logging/artman_logging.yaml
     target: java_gapic
-  - path: googleapis/google/longrunning/artman_longrunning.yaml
-    target: java_gapic
   - path: googleapis/google/monitoring/artman_monitoring.yaml
     target: java_gapic
   - path: googleapis/google/privacy/dlp/artman_dlp_v2.yaml
-    target: java_gapic
-  - path: googleapis/google/privacy/dlp/artman_dlp_v2beta1.yaml
-    target: java_gapic
-  - path: googleapis/google/privacy/dlp/artman_dlp_v2beta2.yaml
     target: java_gapic
   - path: googleapis/google/pubsub/artman_pubsub.yaml
     target: java_gapic
