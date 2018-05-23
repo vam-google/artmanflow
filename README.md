@@ -21,7 +21,7 @@ Workflow wrapper around https://github.com/googleapis/artman
     2. Run `python artmanflow/steps/sources_generation_host.py artmanflow/web/templates/sources_generation.yaml`
 3. **(Optional)** To run individual step on local machine (not in docker), using source generation step as example:
     1. Edit (note all the paths in the config should be local machine-specific) `artmanflow/web/templates/sources_generation.yaml`
-    2. Run 'python artmanflow/steps/sources_generation_guest.py artmanflow/web/templates/sources_generation.yaml
+    2. Run `python artmanflow/steps/sources_generation_guest.py artmanflow/web/templates/sources_generation.yaml`
 
 In case of the option (1) the overall usage of the tool should be intuitive, if no, please let me know.
 
