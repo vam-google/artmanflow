@@ -54,6 +54,8 @@ artman_client_yaml_configs:
     target: java_gapic
   - path: googleapis/google/cloud/texttospeech/artman_texttospeech.yaml
     target: java_gapic
+  - path: googleapis/google/cloud/texttospeech/artman_texttospeech_v1.yaml
+    target: java_gapic
   - path: googleapis/google/cloud/videointelligence/artman_videointelligence_v1p1beta1.yaml
     target: java_gapic
   - path: googleapis/google/cloud/videointelligence/artman_videointelligence_v1.yaml

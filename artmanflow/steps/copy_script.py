@@ -28,6 +28,7 @@ mapping = {
     'gapic-google-cloud-speech-v1': 'google-cloud-speech',
     'gapic-google-cloud-speech-v1beta1': 'google-cloud-speech',
     'gapic-google-cloud-speech-v1p1beta1': 'google-cloud-speech',
+    'gapic-google-cloud-texttospeech-v1': 'google-cloud-texttospeech',
     'gapic-google-cloud-texttospeech-v1beta1': 'google-cloud-texttospeech',
     'gapic-google-cloud-trace-v1': 'google-cloud-trace',
     'gapic-google-cloud-trace-v2': 'google-cloud-trace',
