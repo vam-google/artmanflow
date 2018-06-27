@@ -1,7 +1,13 @@
-import subprocess
+"""
+Run this script on the command-line by:
+python copy_script.py <source_dir> <dest_dir>
+"""
+from subprocess import call
+import sys
 
-staging_path = '/usr/local/google/home/vam/_/_/101/art_2/java'
-dest_path = '/usr/local/google/home/vam/_/projects/github/vam-google/google-cloud-java/google-cloud-clients'
+#TODO change these values if necessary.
+staging_path=sys.argv[1]
+dest_path=sys.argv[2]
 
 mapping = {
     'gapic-google-cloud-bigquerydatatransfer-v1': 'google-cloud-bigquerydatatransfer',
@@ -29,6 +35,7 @@ mapping = {
     'gapic-google-cloud-speech-v1beta1': 'google-cloud-speech',
     'gapic-google-cloud-speech-v1p1beta1': 'google-cloud-speech',
     'gapic-google-cloud-texttospeech-v1beta1': 'google-cloud-texttospeech',
+    'gapic-google-cloud-texttospeech-v1': 'google-cloud-texttospeech',
     'gapic-google-cloud-trace-v1': 'google-cloud-trace',
     'gapic-google-cloud-trace-v2': 'google-cloud-trace',
     'gapic-google-cloud-video-intelligence-v1': 'google-cloud-video-intelligence',
